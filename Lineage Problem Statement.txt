@@ -1,0 +1,10 @@
+Declare  @tablename varchar(250) 
+set @tablename = 'person'
+EXEC('select column_name from sucharith.INFORMATION_SCHEMA.COLUMNS where table_name' + ' = ' + @tablename )
+
+Declare  @tablename varchar(50) 
+set @tablename = 'person' 
+EXEC('select top 0 * from ' + @tablename)
+
+select USER
+select USER_NAME() 
